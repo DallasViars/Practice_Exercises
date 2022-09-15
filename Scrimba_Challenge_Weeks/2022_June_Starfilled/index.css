@@ -1,0 +1,36 @@
+
+:root {
+    --pink: #fbe6f4ff;
+    --yellow: #fffad1ff;
+    --green: #e1f0e5ff;
+    --blue: #b5caf9ff;
+    --orange: #f5e6db;
+    --raisin: #2b283aff;
+    --grey: #d4d4d4;
+}
+
+body {
+    background-image: conic-gradient(var(--raisin), black, navy, black, var(--raisin), black, navy, black, var(--raisin), black, navy, black, var(--raisin));
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 2em;
+    overflow: hidden;
+}
+
+#galaxy {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.star {
+  transform: scale(1);
+  transition: all 1s;
+  transition-timing-function: cubic-bezier(0,1.67,.42,-1.29);
+}
+.star:hover {
+  transform: scale(2);
+}
