@@ -18,7 +18,7 @@ function randNum(min = 0, max = stars.length-1) {
 
 function starFilld() { // I wanted a punny name
   //This creates an array of randomized stars 700 long. I chose 700 since that covers as many stars as needed to fill my monitor. I chose to use spans instead of paragraphs since this renders a string of emojis and has no real, semantic meaning.
-  let starArr = new Array(700).fill(0).map(function() {
+  let starArr = new Array(1500).fill(0).map(function() {
     return `<span class="star">${stars[randNum()]}</span>`
   });
   galaxy.innerHTML = starArr.join(""); 
