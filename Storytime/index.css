@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: black;
+    padding: 1em 2em;
+  }
+  
+  #play {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1em;
+    margin: -1em;
+    text-align: center;
+  /*   background-size: 400%; */
+  }
+  
+  .border-transitions {
+  /*   border-radius: 100% 25% 100% 25% / 25% 25% 25% 25%; */
+    transition: all 2.5s;
+    transform: scale(0.75);
+    background: radial-gradient(circle, yellow, orange, pink, white, red);
+    background-size: 150%;
+  }
