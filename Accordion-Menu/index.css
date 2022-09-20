@@ -1,0 +1,107 @@
+:root {
+    --primary-blue: hsl(238, 29%, 16%);
+    --primary-red: hsl(14, 88%, 65%);
+    --bg-violet: hsl(273, 75%, 66%);
+    --bg-blue: hsl(240, 73%, 65%);
+    --text-dk-gray-blue: hsl(237, 12%, 33%);
+    --text-gray-blue: hsl(240, 6%, 50%);
+    --div-gray-blue: hsl(240, 5%, 91%);
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+  }
+  body,
+  h1,
+  h2,
+  h3,
+  p {
+      margin: 0;
+      padding: 0;
+  }
+  html {
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: linear-gradient(to bottom, var(--bg-violet) 60%, var(--bg-blue) 100%);
+    color: var(--text-gray-blue);
+  }
+  
+  h1 {
+    color: #000;
+    padding-top: 1em;
+    text-align: center;
+  }
+  
+  h3,
+  p {
+    max-width: 400px;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    max-width: 600px;
+    align-items: center;
+    margin: 10em  auto;
+    background: white;
+    border-radius: 15px;
+    transition: all 1s;
+  }
+  section {
+    display: flex;
+    padding: 1em 1em;
+  }
+  button.dropdown {
+    background-color: white;
+    background-image: url("https://assets.codepen.io/5515635/icon-arrow-down.svg");
+    padding: 0.5em 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+  }
+  .dropdown {
+    cursor: pointer;
+  }
+  .dropdown:hover,
+  .dropdown:focus {
+    color: var(--primary-red);
+  }
+  
+  .show-text {
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: 0% 0%;
+    max-height: 100%;
+    transition: all 0.5s ease-in;
+  }
+  .hide-text {
+    transition: all 0.25s ease-out;
+    transform: scale(0);
+    transform-origin: 0% 0%;
+    opacity: 0;
+    max-height: 0;
+  /*   animation: fade-out 0.5s forwards; */
+  }
+  
+  .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: black;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%); 
+  }
+  .attribution a:hover,
+  .attritubtion a:focus {
+    color: white;
+  }
+  
