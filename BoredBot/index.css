@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    background: conic-gradient(#ABA387 180deg, #D6CCA9 180deg);
+    background-size: 500%;
+    height: 100vh;
+    background-position: top left;
+    transition: 5s background-position;
+  }
+  
+  #activity-info {
+    text-align: center;
+  }
+  .main {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 1em;
+  }
+  
+  h1 {
+    text-transform: titlecase;
+  }
+  h2 {
+    text-align: center;
+  }
+  .btn {
+    border-radius: 10px;
+    border-style: none;
+    padding: 2em 4em;
+    font-weight: 800;
+  /*   background: conic-gradient(red, red, red, red, red, red, limegreen, limegreen, limegreen); */
+  /*   background: conic-gradient(red, red, red, red, red, red, limegreen, limegreen, limegreen); */
+  /*   background: radial-gradient(circle, limegreen, red, red, red, black, red, black, red, red, red, limegreen); */
+    background: linear-gradient(135deg, limegreen, limegreen, limegreen, limegreen, red, black, white, black, red, black, white, black, red, black, white, black, red, limegreen, limegreen, limegreen, limegreen);
+    background-size: 500%;
+    background-position: top left;
+    transition: 2s background-position;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+  }
+  .btn:hover {
+    background-position: bottom right;
+  }
+  
+  
