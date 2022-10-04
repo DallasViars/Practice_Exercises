@@ -9,22 +9,18 @@ function dropElements(arr, func) {
     return index < 0 ? [] : arr.slice(index)
 };
 
-console.log(
-  dropElements([1, 2, 3, 4], function(n) {return n > 5;})
-);
-
 
 //Test problems:
 console.log(dropElements([1, 2, 3, 4], function(n) {return n >= 3;}));
-console.log("// should return [3, 4]");
+console.log("[ 3, 4 ]");
 console.log(dropElements([0, 1, 0, 1], function(n) {return n === 1;}));
-console.log("// should return [1, 0, 1]");
+console.log("[ 1, 0, 1 ]");
 console.log(dropElements([1, 2, 3], function(n) {return n > 0;}));
-console.log("// should return [1, 2, 3]");
+console.log("[ 1, 2, 3 ]");
 console.log(dropElements([1, 2, 3, 4], function(n) {return n > 5;}));
-console.log("// should return []");
+console.log("[]");
 console.log(dropElements([1, 2, 3, 7, 4], function(n) {return n > 3;}));
-console.log("// should return [7, 4]");
+console.log("[ 7, 4 ]");
 console.log(dropElements([1, 2, 3, 9, 2], function(n) {return n > 2;}));
-console.log("// should return [3, 9, 2]");
+console.log("[ 3, 9, 2 ]");
 
