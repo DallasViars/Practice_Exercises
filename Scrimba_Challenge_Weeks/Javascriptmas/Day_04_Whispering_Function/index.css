@@ -1,0 +1,67 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: rgba(52, 40, 44, 0.25);
+  background-image: url("pexels-khangnht-_-nocte-9370681.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  max-height: 600px;
+  max-width: 400px;
+  position: relative;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.whisper-msg {
+  text-shadow: 2px 0px white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 1.05px;
+  color: rgba(100, 40, 100, 0.75);
+  padding: 1rem;
+}
+input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  word-wrap: wrap;
+}
+.btn {
+  padding: 0.5rem 0.25rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: rgba(125, 0, 75, 0.25);
+  color: blue;
+  transition: all 0.5s;
+}
+.btn:focus, .btn:hover {
+  background: rgba(125, 0, 75, 1);
+  color: white;
+}
+.btn:active {
+  background: rgba(0, 255, 0, 0.25);
+  color: black;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1em 0.5em;
+}
+a {
+  color: rgb(52, 40, 44);
+  text-shadow: 1px 1px white;
+  letter-spacing: 1px;
+  transition: all 0.75s;
+}
+a:focus, a:hover {
+  transform: scale(1.1);
+  color: 1px 1px white;
+  text-shadow: 1px 1px rgb(52, 40, 44);
+  letter-spacing: 3px;
+}
